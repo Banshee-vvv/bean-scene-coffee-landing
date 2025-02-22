@@ -10,7 +10,6 @@
 
   &__container {
     display: grid;
-    // grid-template-columns: 36% 15% 15.5% 28%;
     grid-template-columns: 12fr 5fr 5fr 9fr;
     gap: 20px;
   }
@@ -47,10 +46,6 @@
 
   &__link {
     color: white;
-    border: none;
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
     font-size: rem(18);
     transition: background-color 0.3s, color 0.3s;
 

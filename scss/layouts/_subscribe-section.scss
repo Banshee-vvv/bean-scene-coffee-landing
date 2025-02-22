@@ -10,7 +10,6 @@
   }
 
   &__title {
-    color: white;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -28,8 +27,6 @@
 
   &__input {
     color: var(--color-black-button);
-    font-family: Playfair Display;
-    font-size: rem(20);
     line-height: 1.7;
     background-color: white;
     padding: 16px 26px;
@@ -42,9 +39,7 @@
     &::placeholder {
       color: var(--color-brand-coffee);
       opacity: 34%;
-      font-family: Playfair Display;
-      font-size: 20px;
-      line-height: 1.7;
+      font: inherit;
     }
 
     &:focus {

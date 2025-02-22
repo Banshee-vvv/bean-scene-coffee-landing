@@ -31,11 +31,8 @@
     color: white;
     border: none;
     background-color: transparent;
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
     font-size: rem(16);
     font-weight: 500;
-    line-height: 1.35;
     transition: background-color 0.3s, color 0.3s;
 
     &_underline {
@@ -44,7 +41,6 @@
 
     &:hover {
       color: var(--color-golden-light);
-      cursor: pointer;
     }
   }
 

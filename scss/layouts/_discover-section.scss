@@ -9,7 +9,7 @@
   }
 
   &__content {
-    flex-basis: 585px;
+    flex-basis: 585px; // Це початкова ширина.
   }
 
   &__title {
@@ -22,5 +22,6 @@
 
   &__image {
     flex-basis: 500px;
+    height: auto;
   }
 }

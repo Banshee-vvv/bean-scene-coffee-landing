@@ -11,15 +11,7 @@
     text-align: center;
   }
 
-  // .advantages-flexbox {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   flex-wrap: wrap;
-  //   gap: 20px;
-  //   margin-bottom: 32px;
-  // }
-
-  .advantages-flexbox {
+  .advantages-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
