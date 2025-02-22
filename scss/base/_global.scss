@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  hanging-punctuation: first last;
 }
 
 body {
@@ -8,9 +9,21 @@ body {
   font-family: "Playfair Display", serif;
   font-size: rem(20);
   line-height: 1.35;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  // max-width: 80ch;
+  text-wrap: pretty;
 }
 
 a {
@@ -19,7 +32,6 @@ a {
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
 }
 
