@@ -1,0 +1,26 @@
+.discover-section {
+  position: relative;
+
+  &__flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__content {
+    flex-basis: 585px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    margin-bottom: 28px;
+  }
+
+  &__image {
+    flex-basis: 500px;
+  }
+}

@@ -1,0 +1,24 @@
+.products-section {
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+// .products-flexbox {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   gap: 20px;
+// }
+
+.products-flexbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

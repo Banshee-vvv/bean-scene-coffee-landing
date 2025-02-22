@@ -1,0 +1,45 @@
+// .decor {
+
+// }
+
+.decor_coffee-blast_1 {
+  position: absolute;
+  left: -120px;
+  top: 380px;
+  z-index: -1;
+}
+
+.decor_coffee-blast_2 {
+  position: absolute;
+  right: -104px;
+  bottom: 520px;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+.decor_coffee-blast_3 {
+  position: absolute;
+  right: -56px;
+  top: 90px;
+  transform: scaleX(-1);
+}
+
+.decor_coffee-blast_4 {
+  position: absolute;
+  left: -24px;
+  bottom: 40px;
+  transform: scaleY(-1);
+}
+
+.decor_coffee-cup_1 {
+  position: absolute;
+  left: -148px;
+  bottom: 370px;
+}
+
+.decor_coffee-cup_2 {
+  position: absolute;
+  right: -196px;
+  bottom: 340px;
+  transform: scaleX(-1);
+}

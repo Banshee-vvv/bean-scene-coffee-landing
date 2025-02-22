@@ -1,0 +1,43 @@
+.advantages-section {
+  position: relative;
+
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  // .advantages-flexbox {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   gap: 20px;
+  //   margin-bottom: 32px;
+  // }
+
+  .advantages-flexbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  &__text_after-advantages {
+    margin-bottom: 24px;
+    text-align: center;
+
+    &_accent {
+      color: var(--color-brand-coffee);
+      font-size: rem(30);
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

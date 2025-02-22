@@ -1,0 +1,71 @@
+.subscribe-section {
+  padding: 0;
+
+  &_background {
+    background-image: url("../images/coffee-cup-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 26px;
+    text-align: center;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__input {
+    color: var(--color-black-button);
+    font-family: Playfair Display;
+    font-size: rem(20);
+    line-height: 1.7;
+    background-color: white;
+    padding: 16px 26px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid var(--color-golden-light);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+
+    &::placeholder {
+      color: var(--color-brand-coffee);
+      opacity: 34%;
+      font-family: Playfair Display;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    &:focus {
+      background-color: var(--color-golden-ultra-light);
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: #e7e7e7;
+      border: 1px solid var(--color-gray);
+      border-right: none;
+
+      &::placeholder {
+        color: var(--color-gray);
+      }
+    }
+  }
+
+  &__button {
+    font-size: rem(22);
+    border-radius: 0 4px 4px 0;
+    width: 140px;
+  }
+}

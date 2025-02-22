@@ -1,0 +1,62 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__logo-link {
+    justify-self: start;
+  }
+
+  &__logo {
+    fill: white;
+  }
+
+  &__nav-flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    align-items: center;
+  }
+
+  &__link {
+    color: white;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 1.35;
+    transition: background-color 0.3s, color 0.3s;
+
+    &_underline {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: var(--color-golden-light);
+      cursor: pointer;
+    }
+  }
+
+  &__buttons-flexbox {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-self: end;
+  }
+
+  &__button {
+    font-weight: 500;
+    width: 100px;
+  }
+}

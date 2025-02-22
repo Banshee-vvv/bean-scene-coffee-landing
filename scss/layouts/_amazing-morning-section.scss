@@ -1,0 +1,45 @@
+.amazing-morning-section {
+  &_background {
+    background-image: url("../images/coffee-cup-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__content {
+    max-width: 600px;
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 22px;
+  }
+
+  &__pictures {
+    position: relative;
+    height: 574px;
+  }
+
+  &__picture-1 {
+    position: absolute;
+    bottom: 0;
+    right: -124px;
+  }
+
+  &__picture-2 {
+    position: absolute;
+    top: 54px;
+    right: 174px;
+  }
+}

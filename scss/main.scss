@@ -1,0 +1,37 @@
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+
+// Base
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/decorations";
+
+// Responsive
+// @import "responsive"; // Файл із адаптивними стилями
+
+// Components
+@import "./components/advantage-card";
+@import "./components/buttons";
+@import "./components/comment-card";
+@import "./components/modals";
+@import "./components/product-card";
+@import "./components/social-media-icon";
+
+// Layouts
+@import "./layouts/container";
+@import "./layouts/section";
+
+@import "./layouts/advantages-section";
+@import "./layouts/amazing-morning-section";
+@import "./layouts/discover-section";
+@import "./layouts/feedback-section";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/products-section";
+@import "./layouts/subscribe-section";
+
+// Utilities
+@import "./utilities/utilities"; // Atomic CSS
