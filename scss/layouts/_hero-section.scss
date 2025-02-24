@@ -7,8 +7,13 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding-top: 183px;
-    padding-bottom: 96px;
+    padding-top: 136px;
+    padding-bottom: 72px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 183px;
+      padding-bottom: 96px;
+    }
   }
 
   &__text_before-title {
