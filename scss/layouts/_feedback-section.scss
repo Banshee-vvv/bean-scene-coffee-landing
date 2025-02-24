@@ -2,25 +2,28 @@
   position: relative;
   padding-bottom: 138px;
 
-  &__container {
-    padding: 0 83px;
-  }
-
   &__title {
-    margin-bottom: 15px;
     text-align: center;
   }
 
   &__text {
-    margin-bottom: 45px;
+    margin-bottom: 36px;
     text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 44px;
+    }
   }
 
   .comments {
     display: grid;
-    grid-template-columns: 41px 41px 1fr 41px 41px;
+    grid-template-columns: 32px 32px 1fr 32px 32px;
     justify-items: center;
     align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      grid-template-columns: 41px 41px 1fr 41px 41px;
+    }
 
     &__list {
       grid-column: 2 / 5;
@@ -36,11 +39,26 @@
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: 82px;
-      height: 82px;
+      width: 64px;
+      height: 64px;
       padding: 0;
       border-radius: 16px;
       fill: #1e1e1e;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 82px;
+        height: 82px;
+      }
+
+      &-arrow {
+        width: 12px;
+        height: 12px;
+
+        @media screen and (min-width: $bp-tablet) {
+          width: 16px;
+          height: 16px;
+        }
+      }
 
       &_next {
         rotate: 180deg;
