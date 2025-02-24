@@ -1,19 +1,22 @@
 .discover-section {
   position: relative;
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: left;
+  }
 
   &__flexbox {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-  }
-
-  &__content {
-    flex-basis: 585px; // Це початкова ширина.
+    gap: 20px;
   }
 
   &__title {
-    margin-bottom: 28px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 28px;
+    }
   }
 
   &__text {
@@ -21,7 +24,19 @@
   }
 
   &__image {
-    flex-basis: 500px;
-    height: auto;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: min(50vw, 520px);
+      height: auto;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
   }
 }
