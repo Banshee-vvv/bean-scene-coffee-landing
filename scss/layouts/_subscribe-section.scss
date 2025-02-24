@@ -6,7 +6,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 80px 0;
+    padding: 44px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 80px 0;
+    }
   }
 
   &__title {
@@ -21,9 +25,13 @@
 }
 
 .subscribe-form {
-  display: flex;
-  justify-content: center;
+  display: block;
   position: relative;
+
+  @media screen and (min-width: $bp-mobile) {
+    display: flex;
+    justify-content: center;
+  }
 
   &__input {
     color: var(--color-black-button);
@@ -33,8 +41,14 @@
     max-width: 500px;
     width: 100%;
     border: 1px solid var(--color-golden-light);
-    border-right: none;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-mobile) {
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      margin: 0;
+    }
 
     &::placeholder {
       color: var(--color-brand-coffee);
@@ -60,7 +74,14 @@
 
   &__button {
     font-size: rem(22);
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     width: 140px;
+    padding: 0.8em;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-mobile) {
+      border-radius: 0 4px 4px 0;
+      margin: 0;
+    }
   }
 }

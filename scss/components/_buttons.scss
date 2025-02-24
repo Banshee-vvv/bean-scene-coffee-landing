@@ -1,10 +1,10 @@
 .button {
+  display: block;
   color: var(--color-black-button);
   background-color: var(--color-golden-light);
   text-decoration: none;
   border: none;
   border-radius: 24px;
-  display: block;
   text-align: center;
   font-size: rem(16);
   font-weight: 700;
