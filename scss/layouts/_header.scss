@@ -7,9 +7,12 @@
 
   &__container {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 116px 1fr 116px;
     align-items: center;
-    gap: 60px;
+
+    @media screen and (min-width: $bp-mobile) {
+      grid-template-columns: 200px 1fr 200px;
+    }
   }
 
   &__logo-link {
@@ -18,22 +21,43 @@
 
   &__logo {
     fill: white;
+    width: 104px;
+    height: auto;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 116px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 132px;
+    }
   }
 
   &__nav-flexbox {
-    display: flex;
-    justify-content: center;
-    gap: 54px;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      justify-self: center;
+      max-width: min(412px, 40vw);
+      width: 100%;
+      align-items: center;
+    }
   }
 
   &__link {
     color: white;
     border: none;
     background-color: transparent;
-    font-size: rem(16);
+    font-size: rem(14);
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: rem(16);
+    }
 
     &_underline {
       text-decoration: underline;
@@ -45,14 +69,51 @@
   }
 
   &__buttons-flexbox {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    justify-self: end;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-self: end;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 28px;
+    }
   }
 
   &__button {
+    font-size: rem(14);
     font-weight: 500;
-    width: 100px;
+    width: 88px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: rem(16);
+      width: 100px;
+    }
+  }
+
+  &__burger {
+    display: block;
+    justify-self: end;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+    transition: background-color 0.3s;
+
+    @media (min-width: $bp-mobile) {
+      width: 28px;
+      height: 28px;
+    }
+
+    @media (min-width: $bp-tablet) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--color-golden-light);
+    }
   }
 }
