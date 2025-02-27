@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   hanging-punctuation: first last;
+
+  @media (max-width: $bp-tablet) {
+    font-size: 80%;
+  }
 }
 
 body {
