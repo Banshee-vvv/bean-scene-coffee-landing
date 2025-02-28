@@ -51,6 +51,7 @@
 
   &__button {
     margin: 0 auto;
+
     @media screen and (min-width: $bp-tablet) {
       margin: 0;
     }

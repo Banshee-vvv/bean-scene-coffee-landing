@@ -3,7 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 20px;
+  padding: 16px 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 20px 0;
+  }
 
   &__container {
     display: grid;
@@ -21,12 +25,8 @@
 
   &__logo {
     fill: white;
-    width: 104px;
+    width: 116px;
     height: auto;
-
-    @media screen and (min-width: $bp-mobile) {
-      width: 116px;
-    }
 
     @media screen and (min-width: $bp-desktop) {
       width: 132px;
@@ -95,25 +95,29 @@
   }
 
   &__burger {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: end;
-    background-color: white;
-    width: 24px;
-    height: 24px;
+    background-color: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
     z-index: 10;
-    transition: background-color 0.3s;
-
-    @media (min-width: $bp-mobile) {
-      width: 28px;
-      height: 28px;
-    }
 
     @media (min-width: $bp-tablet) {
       display: none;
     }
+  }
+
+  &__burger-icon {
+    fill: white;
+    width: 100%;
+    height: 100%;
+    transition: fill 0.3s;
 
     &:hover {
-      background-color: var(--color-golden-light);
+      fill: var(--color-golden-light);
     }
   }
 }
