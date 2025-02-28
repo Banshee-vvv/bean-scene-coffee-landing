@@ -1,20 +1,44 @@
 .amazing-morning-section {
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: left;
+  }
+
   &_background {
+    position: relative;
     background-image: url("../images/coffee-cup-background-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 40px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 52px 0;
+    }
   }
 
-  &__flexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  // &__flexbox {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   gap: 16px;
+  // }
+
+  &__wrapper {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: grid;
+      grid-template-columns: minmax(300px, 600px) 1fr;
+      align-items: center;
+      gap: 16px;
+    }
   }
 
   &__content {
-    max-width: 600px;
+    // max-width: 600px;
+    grid-column: 1;
   }
 
   &__title {
@@ -25,20 +49,30 @@
     margin-bottom: 22px;
   }
 
-  &__pictures {
-    position: relative;
-    height: 574px;
-  }
-
-  &__picture-1 {
-    position: absolute;
-    bottom: 0;
-    right: -124px;
+  &__button {
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
   }
 
   &__picture-2 {
-    position: absolute;
-    top: 54px;
-    right: 174px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      grid-column: 2;
+      justify-self: center;
+      max-width: min(300px, 32vw);
+      height: auto;
+    }
   }
+
+  // &__picture-1 {
+  //   position: absolute;
+  //   height: 100%;
+  //   bottom: 0;
+  //   right: -124px;
+  //   // z-index: -1;
+  // }
 }
