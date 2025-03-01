@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   padding: 16px 0;
+  z-index: 5;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 20px 0;
@@ -103,7 +104,6 @@
     border: none;
     width: 28px;
     height: 28px;
-    z-index: 10;
 
     @media (min-width: $bp-tablet) {
       display: none;
