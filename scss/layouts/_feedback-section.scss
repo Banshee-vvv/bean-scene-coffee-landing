@@ -17,11 +17,19 @@
 
   .comments {
     display: grid;
-    grid-template-columns: 32px 32px 1fr 32px 32px;
+    grid-template-columns: 12px 12px 1fr 12px 12px;
     justify-items: center;
     align-items: center;
 
+    @media screen and (min-width: $bp-mobile) {
+      grid-template-columns: 24px 24px 1fr 24px 24px;
+    }
+
     @media screen and (min-width: $bp-tablet) {
+      grid-template-columns: 32px 32px 1fr 32px 32px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       grid-template-columns: 41px 41px 1fr 41px 41px;
     }
 
@@ -39,22 +47,42 @@
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: 64px;
-      height: 64px;
+      width: 24px;
+      height: 24px;
       padding: 0;
       border-radius: 16px;
       fill: #1e1e1e;
 
+      @media screen and (min-width: $bp-mobile) {
+        width: 48px;
+        height: 48px;
+      }
+
       @media screen and (min-width: $bp-tablet) {
+        width: 64px;
+        height: 64px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
         width: 82px;
         height: 82px;
       }
 
       &-arrow {
-        width: 12px;
-        height: 12px;
+        width: 6px;
+        height: 6px;
+
+        @media screen and (min-width: $bp-mobile) {
+          width: 10px;
+          height: 10px;
+        }
 
         @media screen and (min-width: $bp-tablet) {
+          width: 12px;
+          height: 12px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
           width: 16px;
           height: 16px;
         }
