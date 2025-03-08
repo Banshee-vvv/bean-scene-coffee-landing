@@ -7,12 +7,8 @@
   }
 
   &__text {
-    margin-bottom: 36px;
+    margin-bottom: 2.2em;
     text-align: center;
-
-    @media screen and (min-width: $bp-tablet) {
-      margin-bottom: 44px;
-    }
   }
 
   .comments {

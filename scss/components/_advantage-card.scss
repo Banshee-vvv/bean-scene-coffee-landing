@@ -19,10 +19,11 @@
   &__image {
     width: 72px;
     height: auto;
-    margin: 0 auto 24px;
+    margin: 0 auto 20px;
 
     @media screen and (min-width: $bp-tablet) {
       width: 88px;
+      margin: 0 auto 24px;
     }
   }
 
@@ -30,6 +31,6 @@
     color: var(--color-brand-coffee);
     font-size: rem(28);
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 0.3em;
   }
 }
