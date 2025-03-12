@@ -12,9 +12,29 @@
     background-position: center;
     background-size: cover;
     padding: 40px 0;
+    overflow: hidden;
+    z-index: -2;
 
     @media screen and (min-width: $bp-tablet) {
       padding: 52px 0;
+    }
+  }
+
+  &__picture-1 {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      right: -124px;
+      z-index: -1;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: min(54%, 1600px);
+      height: auto;
     }
   }
 
@@ -60,12 +80,4 @@
       height: auto;
     }
   }
-
-  // &__picture-1 {
-  //   position: absolute;
-  //   height: 100%;
-  //   bottom: 0;
-  //   right: -124px;
-  //   // z-index: -1;
-  // }
 }
