@@ -59,3 +59,32 @@ checkWindowSize();
 
 // Додаємо слухача події на зміну розміру вікна
 window.addEventListener("resize", checkWindowSize);
+
+//
+//
+// Тут comment-slider:
+
+document.addEventListener("DOMContentLoaded", function () {
+  const list = document.querySelector(".comments__list");
+  const prevBtn = document.querySelector(".comments__switch-button");
+  const nextBtn = document.querySelector(".comments__switch-button_next");
+  const items = document.querySelectorAll(".comments__list-item");
+
+  let index = 0;
+  const totalItems = items.length;
+
+  function updateSlider() {
+    const offset = index * 100;
+    list.style.transform = `translateX(-${offset}%)`;
+  }
+
+  nextBtn.addEventListener("click", function () {
+    index = (index + 1) % totalItems;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", function () {
+    index = (index - 1 + totalItems) % totalItems;
+    updateSlider();
+  });
+});
